@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JS Variables</h1>
+
+    <p id="demo"></p>
+    <p id="demos"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+
+    <script>
+        {
+            var dd= 100;
+        }
+
+        // variable using let
+        let x = 5;
+        let y = 6;
+        let z = x + y;
+
+        document.getElementById("demo").innerHTML = "The value of z is " + z;
+
+        // variable using const
+        const a = 9;
+        const b = 5;
+        const c = a - b;
+
+        document.getElementById("demos").innerHTML = "The value of c is " + c;
+
+        // variable using underscore
+        let _x = 2;
+        let _100 = 5;
+
+        document.getElementById("demo1").innerHTML = _x + _100;
+
+        // variable using Dollar
+        let $$$ = 2;
+        let $myMoney = 5;
+
+        document.getElementById("demo2").innerHTML = $$$ + $myMoney;
+
+        // variable using Mix variable
+        const price1 = 5;
+        const price2 = 6;
+        let total = price1 + price2;
+
+        document.getElementById("demo3").innerHTML = "The total is: " + total;
+
+        // variable using var variable
+        var d = 5;
+        var f = 6;
+        var g = d + f;
+
+        document.getElementById("demo4").innerHTML = "The value of g is " + g;
+
+        // variable using types of variable
+        const pi = 3.14;
+        let person = "John Doe";
+        let answer = 'Yes I am!';
+
+        document.getElementById("demo5").innerHTML = pi + "<br>" + person + "<br>" + answer;
+
+        //global scope
+        document.getElementById("demo6").innerHTML = "The value of global sccope is " + dd;
+        
+    </script>
+    
+</body>
+
+</html>
