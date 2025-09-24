@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Arithmetic Operators</h2>
+    <pre id="out"></pre>
+    <h2>Assignment Operators</h2>
+    <pre id="out1"></pre>
+    <h2>Comparison Operators</h2>
+<pre id="out2"></pre>
+    
+
+
+    <script>
+        let xx = 10, yy = 3;
+        let rrr = "";
+
+        rrr += "xx + yy = " + (xx + yy) + "\n";
+        rrr += "xx - yy = " + (xx - yy) + "\n";
+        rrr += "xx * yy = " + (xx * yy) + "\n";
+        rrr += "xx / yy = " + (xx / yy) + "\n";
+        rrr += "xx % yy = " + (xx % yy) + "\n";
+        rrr += "xx ** yy = " + (xx ** yy) + "\n";
+
+        document.getElementById("out").innerText = rrr;
+        //
+        let vv = 10;   // main variable
+        let rr = "";   // result string
+
+        // Assignment examples
+        rr += "Start: vv = " + vv + "\n";
+
+        vv += 5;   // vv = vv + 5
+        rr += "vv += 5 → " + vv + "\n";
+
+        vv -= 3;   // vv = vv - 3
+        rr += "vv -= 3 → " + vv + "\n";
+
+        vv *= 2;   // vv = vv * 2
+        rr += "vv *= 2 → " + vv + "\n";
+
+        vv /= 4;   // vv = vv / 4
+        rr += "vv /= 4 → " + vv + "\n";
+
+        vv %= 3;   // vv = vv % 3
+        rr += "vv %= 3 → " + vv + "\n";
+
+        document.getElementById("out1").innerText = rr;
+
+        let aaa = 10, bbb = 5;
+let ccc = "";
+
+// Comparison examples
+ccc += "aaa = " + aaa + ", bbb = " + bbb + "\n\n";
+
+ccc += "aaa > bbb : " + (aaa > bbb) + "\n";
+ccc += "aaa < bbb : " + (aaa < bbb) + "\n";
+ccc += "aaa >= bbb : " + (aaa >= bbb) + "\n";
+ccc += "aaa <= bbb : " + (aaa <= bbb) + "\n";
+ccc += "aaa == 10 : " + (aaa == 10) + "\n";
+ccc += "aaa === '10' : " + (aaa === '10') + "\n";
+ccc += "aaa != bbb : " + (aaa != bbb) + "\n";
+
+document.getElementById("out2").innerText = ccc;
+    </script>
+</body>
+
+</html>
